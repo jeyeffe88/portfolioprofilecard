@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <div class="card-body text-center">
+                <img class="avatar rounded-circle" src="{{avatarSrc}}" alt="">
+                <h6 class="card-subtitle mb-2 text-muted">{{subTitle}}</h6>
+                <h4 class="card-title">{{title}}</h4>
+            </div>
+            <div class="padding" [hidden]="profileCardInfo == null">
+                <div id="divGroupHome" class="d-flex justify-content-center"> 
+                    <div #name id="name" (mouseover)="changeDetailInfo($event)" class="customDiv"><i class="fa fa-2x fa-user" aria-hidden="true" title="name"></i> </div>
+                    <div #email_address id="email_address" (mouseover)="changeDetailInfo($event)" class="customDiv"><i class="fa fa-2x fa-envelope" aria-hidden="true" title="email_address"></i></div>
+                    <div #birthday id="birthday" (mouseover)="changeDetailInfo($event)" class="customDiv"><i class="fa fa-2x fa-calendar" aria-hidden="true" title="birthday"></i></div>
+                    <div #address id="address" (mouseover)="changeDetailInfo($event)" class="customDiv"><i class="fa fa-2x fa-map" aria-hidden="true" title="address"></i></div>
+                    <div #phone_number id="phone_number" (mouseover)="changeDetailInfo($event)" class="customDiv"><i class="fa fa-2x fa-phone" aria-hidden="true" title="phone_number"></i></div>
+                    <div #password id="password" (mouseover)="changeDetailInfo($event)" class="customDiv"><i class="fa fa-2x fa-lock" aria-hidden="true" title="password"></i></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <ngx-spinner></ngx-spinner>
+</div>

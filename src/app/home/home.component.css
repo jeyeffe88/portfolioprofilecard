@@ -1,0 +1,22 @@
+
+.avatar {
+    margin-top: -6rem;
+    margin-bottom: 1rem;
+    max-width: 9rem;
+}
+
+body{
+  padding: 2rem 0rem;
+}
+
+.customDiv{
+  color: grey;
+  cursor: pointer;
+  padding: 40px;
+}
+
+.customDivHover{
+  color: #62ad4a;
+  padding: 40px;
+  border-bottom: 1px solid #62ad4a
+}
